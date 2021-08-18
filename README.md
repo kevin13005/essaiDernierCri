@@ -5,6 +5,8 @@ Dernier cri : Explication démarche projet
 2eme étape : Initialisation et création du repo GitHub, j'utilise la branch master
 
 3eme étape :Choix du theme Twenty twenty one qui convient au cahier des charges, c'est à dire, une page d'accueil affichant les articles (arborescence du theme correspondant parfaitement, ici index.php est utilisé pour afficher tous les articles car front-page.php ou home.php ne sont pas présent dans l'arborescence).De plus, en back office, dans reglages, j'ai fixé "les derniers articles à afficher'. Une page détail des articles, ici single.php convient pour ceci.
+Donc création d'un theme enfant de twenty twenty one pour que ce soit lisible plus facilement
+pour vous, que ce soit dans functions.php ou index.php par exemple.
 
 4eme etape : Choix de "pokemon API" comme article à afficher sur le blog. J'utiliserai les methode HTTP REQUEST disponible dans Wordpress. Le code documenté et implémenté est disponible dans index.php Les articles sont importés, s'affiche dans index.php et s'ajoute automatiquement dans l'interface et en base de données avec mon code.
 
