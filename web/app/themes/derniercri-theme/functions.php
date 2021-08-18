@@ -1,12 +1,18 @@
 <?php
 
+/**obtention du style du theme parent */
 function twentytwentyone_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_uri(),
 	array( 'twenty-twenty-one-style' ), wp_get_theme()->get('Version') );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwentyone_styles');
 
+//ajout style enfant
+add_action( 'wp_enqueue_scripts', 'enfant_style' );
+function enfant_style() {
+    wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/style.css', false, '1.0', 'all' );
 
+}
 /**********************************************************************************************
  * modification apporté au theme twenty twenty one directement ici dans functions.php exceptionnellement.
  * Pas besoin d'un theme enfant car c'est un essai donc on ne mettra pas a jour et les modifications ne seront pas effacées

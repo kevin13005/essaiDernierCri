@@ -17,3 +17,14 @@ pour vous, que ce soit dans functions.php ou index.php par exemple.
 7eme etape : ajouter wp-CLI sur mon ordinateur et sur wordpress, j' essai ensuite de generer des news automatiquement avec WP GENERATE POST, Mais wp-cli me dit que le custom post type n'est pas enregistré. Apres beaucoup de tentatives et recherche , je n'ai pas pu trouver pourquoi wp-cli ne reconnait pas l'existence du custom post type 'news' qui est présent dans l'interface d'administratino wordpress pourtant. Donc création avec l'interface directement de 20 news.
 
 8eme etape : Le custom post type 'News' est accessible via REST API à la route localhost:8001/wp-json/wp/v2/news/, en ajoutant un parametre dans la fonction register post type() dans functions.php
+
+
+Acceder au projet :
+
+Avoir localhost installé
+cloner le projet dans github
+lancer localhost sur localhost:8001 donc port 8001 
+faire commande dans le terminal : php -S localhost:8001 -t web
+aller sur localhost:8001/wp pour acceder à l'administration wordpress
+identifiant : derniercri
+mot de passe : derniercri
